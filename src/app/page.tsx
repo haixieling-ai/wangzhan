@@ -8,6 +8,7 @@ import { AIGCLabSection } from "@/components/AIGCLabSection";
 import { SpacePortfolioShowcase } from "@/components/SpacePortfolioShowcase";
 import { AIGCQuoteSection } from "@/components/AIGCQuoteSection";
 import { useInView } from "@/components/useInView";
+import { getVideoUrl } from "@/lib/videoPath";
 
 const navItems = [
   { label: "作品", href: "#works" },
@@ -15,12 +16,12 @@ const navItems = [
   { label: "关于", href: "#about" },
 ];
 
-const HERO_VIDEO = "/videos/hero-showreel.mp4";
-const PROJECT_VIDEO = "/videos/creative%20short%20film.MP4";
-const PROJECT_VIDEO_2 = "/videos/project-02.mp4";
-const PROJECT_VIDEO_3 = "/videos/dongman.mp4";
-const PROJECT_VIDEO_4 = "/videos/chengpian.MP4";
-const PROJECT_VIDEO_5 = "/videos/kehuandapian.mp4";
+const HERO_VIDEO = getVideoUrl("/videos/hero-showreel.mp4");
+const PROJECT_VIDEO = getVideoUrl("/videos/creative%20short%20film.MP4");
+const PROJECT_VIDEO_2 = getVideoUrl("/videos/project-02.mp4");
+const PROJECT_VIDEO_3 = getVideoUrl("/videos/dongman.mp4");
+const PROJECT_VIDEO_4 = getVideoUrl("/videos/chengpian.MP4");
+const PROJECT_VIDEO_5 = getVideoUrl("/videos/kehuandapian.mp4");
 
 /* 项目案例库数据 - 可替换为实际资源路径 */
 const projects = [
